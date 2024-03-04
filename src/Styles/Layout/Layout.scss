@@ -1,0 +1,358 @@
+
+/////  Layout
+.DashboardLayout {
+    color: var(--text); background: var(--bg2);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex; justify-content: center; align-items: center;
+    .DashboardLayout_Cover{
+        min-height: 100vh;
+        width: 100vw;
+        border-radius: 20px;
+      
+      }
+      
+      .DashboardLayout_Body{
+          position: absolute;
+          left: 290px;
+          width: calc(98% - 290px);
+          
+      }   
+      .DashboardLayout_Body_Open{
+          left: 140px;
+          width: calc(98% - 140px);
+          transition: 1s ease-in-out;
+      
+      
+      }
+  
+    
+}
+///// Arabic Mood
+.ar{
+    .DashboardLayout_Body{
+        right: 290px;
+        
+    }   
+    .DashboardLayout_Body_Open{
+        right: 140px;
+        width: calc(96% - 140px);
+        transition: 1s ease-in-out;
+    
+    
+    }
+}
+
+
+
+.card {
+background: var(--bg);
+ @include Shadow;
+ outline: none !important;
+ border: none !important;
+}
+.Model_Button{
+    background: var(--primary);
+    outline: none;
+    border: none;
+}
+.SweetAlert{
+    .btn-primary{
+        background: var(--primary);
+        outline: none;
+        border: none;
+        box-shadow: none !important;
+    }
+}
+.TableActions{
+    svg{
+        fill: var(--primary);
+    }
+}
+.form-control:focus{
+    box-shadow:  0 0 0 0.2rem rgba(0, 0, 0, 0.2) !important;
+    border: var(--primary);
+}
+.Page_Header{
+    display: flex; align-items: center ; justify-content: space-between;
+    margin-bottom: 20px;
+
+    h1{
+        font-size: 30px;
+        font-weight: 600;
+        
+    }
+}
+.PrimaryColor{
+    margin-inline: 10px;
+}
+
+.react-toggle-track{
+    background: red ;
+}
+
+///// spinner 
+.jwoUqQ{
+    color: var(--primary) !important;
+}
+.Auth{
+    background-color: var(--bg2);
+    margin: auto;
+    width:100%;
+    display: flex; justify-content: center; align-items: center;
+    height: 100vh;
+}
+.Translate,.Theme{
+    img{
+        margin-inline: 6px;
+    }
+}
+.szh-menu{
+    background-color: var(--bg);
+}
+
+.modal-content{
+    background-color: var(--bg) !important;
+}
+.btn-primary{
+    background: var(--primary);
+    border-color: var(--primary) !important;
+    &:hover{
+        background: var(--primary);
+
+    }
+}
+.ModalHeader{
+    color: var(--text);
+}
+ .css-b62m3t-container .react-select__control{
+    background-color:var(--bg);
+   }
+   
+   .react-select__control--is-disabled{
+    background-color:var(--bg) !important;
+   }
+
+  
+
+    
+    .glass{
+        .Layout_Children{
+            max-height: 500px;
+            overflow-y: auto;
+            overflow-x: hidden
+        }
+        .modal {  @include GlassModeBG; }
+        .DashboardLayout {
+
+            background-image: url("../../../public/Layout/mac.webp");
+                max-height: 200px;
+            
+        }
+        .modal-content{
+            @include GlassModeCover;
+      
+        }
+        .DashboardLayout_Cover{
+            @include GlassModeCover;
+    
+        
+            
+            }
+            .LayoutBody{
+                // overflow-y: scroll;
+                height: 400px;
+                                       overflow-y: auto;
+
+
+            }
+
+    ::-webkit-scrollbar { min-width: 15px; width: 100%; } 
+    ::-webkit-scrollbar-track { box-shadow: inset 0 0 5px var(--primary); }
+    ::-webkit-scrollbar-thumb {
+        background:transparent no-repeat center center ; 
+        background-size: cover;
+        &:hover{
+
+            background:var(--primary) no-repeat center center ; 
+            cursor: pointer !important;
+
+        }
+        
+        
+            }
+            .react-tabs__tab::after{
+                border-bottom: 4px solid var(--primary) !important;
+    
+            }
+            .progress, .progress-stacked{
+                background-color: var(--bg2) !important;
+            }
+    
+                button{
+                    background: none !important;
+                    color: var(--primary);
+                  
+                }
+    .react-confirm-alert div .sweet-alert{
+        background-color:transparent !important;
+        @include GlassModeCover;
+        border: 1px solid var(--primary);
+        color: var(--primary);
+         .btn-primary{
+            background-color: transparent ;
+            border: 1px solid var(--primary);
+            &:hover {
+                background-color: rgba(16 18 27 / 40%);
+                backdrop-filter: blur(24px);
+               }
+        }
+       }
+       .react-confirm-alert{
+        max-height: 100px;
+
+    }
+    .react-confirm-alert > div > div > div{
+        @include GlassModeBG;
+        max-height: 100px;
+
+     }
+     .Add_Button{
+        button {
+            box-shadow: 2px 2px 1px 0 var(--primary);
+    
+           }
+           
+         
+           button:hover {
+            background-color: rgba(16 18 27 / 40%);
+            backdrop-filter: blur(24px);
+           }
+    }
+    .btn-secondary{
+            box-shadow: 2px 2px 1px 0 var(--primary);
+    
+           
+    &:hover {
+            background-color: rgba(16 18 27 / 40%);
+            backdrop-filter: blur(24px);
+           }
+    }
+    .sc-bdvvtL .sc-hGPBjI .sc-pVTFL{
+ background-color:transparent;
+ color:var(--text);
+}
+.react-tabs__tab-panel--selected .ValidatedField .ant-input-affix-wrapper,.modal-body .ValidatedField .ant-input-affix-wrapper{
+ background-color:transparent;
+}
+
+/* Input */
+.react-tabs__tab-panel--selected .ValidatedField input[type=text],.modal-body .ValidatedField input{
+ background-color:transparent;
+ color:var(--text)!important;
+ &::placeholder{
+    color: var(--text);
+ }
+}
+
+
+
+        }
+        
+         .ViewPage{
+            .card-header{
+                padding: 25px 25px 0 25px;
+                background: var(--bg) !important;
+                color: var(--text);
+                border-bottom: none !important;
+                display: flex; justify-content: space-between;
+                .card-title{
+                    font-size: 2vw;
+                }
+                    button{
+                        background: var(--primary) ;
+                        color: var(--bg);
+                        font-weight: bold;
+                        outline: none;
+                        border: none;
+                        min-width: 100px;
+                        max-height: 40px;
+                    }
+            }
+            .react-tabs__tab-list{
+                z-index: 1;
+                display: flex;            
+            }
+            .react-tabs__tab{           
+         
+                flex: 1;
+                color: var(--text);
+
+            }
+            .react-tabs__tab--selected {
+                border-top: none; border-left: none; border-right: none;
+                border-bottom: 4px solid var(--primary);
+                color: var(--primary);
+                z-index: 99999;
+                background: var(--bg2);
+    
+            }
+           
+        }
+     
+    
+        .react-tabs__tab:focus{
+            // background-color: red !important;
+
+            all: unset;
+              border-top: none; border-left: none; border-right: none;
+                border-bottom: 4px solid var(--primary);
+                color: var(--primary);
+                z-index: 99999;
+                background: var(--bg2);
+                  min-width: 100px;
+
+                flex: 1;
+                color: var(--text);
+                    max-height: 40px;
+
+        }
+
+
+        .ant-input-group-wrapper .ant-input-wrapper .ant-input-affix-wrapper{
+ background-color:var(--bg) !important;
+ color: var(--text) !important;
+}
+
+/* Input */
+.ant-input-wrapper .ant-input-affix-wrapper input[type=text]{
+ background-color:var(--bg) !important;
+  color: var(--text) !important;
+  &::placeholder{
+     color: var(--text) !important;
+  }
+}
+
+/* Warning */
+#root div .warning{
+ color:var(--secondary);
+}
+
+/* Content Division */
+#root .title-section p{
+ color:var(--secondary);
+}
+
+
+
+
+
+/* Iwjdpv */
+#root .card .sc-iwjdpV{
+ background-color:var(--bg2) !important;
+ color:var(--text) !important;
+}
+
+

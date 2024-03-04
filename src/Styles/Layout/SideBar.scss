@@ -1,0 +1,354 @@
+
+
+.SideBar {
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+    height: 100%;
+    position: fixed;
+    background: var(--bg);
+    transition: .3s ease-in-out;
+@include Shadow;
+overflow-y: auto;
+overflow-x: hidden;
+&::-webkit-scrollbar {
+  width: 7px; 
+    cursor: pointer;
+
+}
+
+&::-webkit-scrollbar-thumb {
+  background-color: transparent;   
+  border-radius: 10px;
+  cursor: pointer;
+}
+&:hover{
+    &::-webkit-scrollbar {
+  width: 7px; 
+}
+
+&::-webkit-scrollbar-thumb {
+  background-color: var(--primary);   
+  border-radius: 10px;
+}
+}
+
+}
+
+.SideBar_Top {
+    @include Flex;
+    margin-block: 20px;
+    color: var(--primary);
+    z-index: 9999999;
+    img{
+        margin-inline: 10px;
+    }
+    .HamburgerMenu{
+        z-index: 999999999999999;
+        height: 30px;
+        width: 30px;
+        svg{
+            font-size: 20px;
+        }
+    }
+}
+
+.SideBar_Links {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 15px;
+
+}
+
+.SideBar_Link {
+
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: .3s ease-in-out all;
+    margin-bottom: 5px;
+    width: 90%;
+    height: 45px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    margin-left: 15px;
+    text-wrap: nowrap;
+    
+
+    &:hover{
+        background: var(--primary);
+        color: var(--bg);
+        border-radius: 5px;
+        box-shadow: 2px 2px 7px 0 var(--primary);
+        cursor: pointer;
+        transform: scale(1.01);
+        @include Shadow;
+
+        svg{
+          
+                // background-color: var(--secondary);
+                color: var(--bg);
+            
+        }
+    }
+   .DropDown_Svg svg{
+ color:var(--text);
+}
+
+
+
+    svg {
+        padding: 5px;
+        border-radius: 10px;
+        // background-color: var(--bg2);
+        color: var(--secondary);
+        margin-left: 10px;
+        
+        font-size: 30px;
+
+        &:hover{
+            background-color: var(--primary);
+            color: var(--bg);
+        }
+    }
+  
+    
+}
+.ar{
+    .SideBar_Link{
+        margin-right: 15px !important;
+        margin-left: 0px !important;
+        svg {
+         
+            margin-right: 10px;
+            margin-left: 0px !important;
+
+        
+        }
+        
+
+    }
+}
+
+.SideBar_Links_Header{
+  
+    margin-block: 10px;
+    font-size: 12px;
+    background: var(--bg2);
+    height: 50px;
+    @include Flex;
+
+    width: 100%;
+}
+.Active_SideBar_Link{
+    background: var(--linear);
+    color: var(--bg);
+    border-radius: 5px;
+    box-shadow: 2px 2px 7px 0 var(--primary);
+
+    svg {
+        background-color: transparent;
+        color: var(--bg);
+        
+    }
+}
+.glass{
+    .Active_SideBar_Link{
+        background: var(--linear);
+        color: var(--bg);
+        border-radius: 5px;
+        box-shadow: 2px 2px 7px 0 transparent;
+        background-color: rgba(16 18 27 / 1%);
+        backdrop-filter: blur(24px);
+    }
+    .SideBar_Link {
+        &:hover {
+            background-color: rgba(16 18 27 / 40%);
+            backdrop-filter: blur(24px);
+           }
+        &:hover{
+            background: transparent;
+            color: var(--bg);
+            border-radius: 5px;
+            box-shadow: 1px 2px 7px 0 transparent;
+            cursor: pointer;
+            transform: scale(1.01);
+            svg{
+              
+                    background-color:transparent;
+                    color: var(--text);
+                
+            }
+        }
+    }
+}
+
+
+.DropDown_Text{
+   width: 100px;
+//  text-overflow: ellipsis;
+//  overflow: hidden;
+ margin-right: 30px;
+}
+
+
+.SideBar_Open{
+    width: 90px;
+    .Active_SideBar_Link,.SideBar_Link:hover{
+        width: 60%;
+    }
+    .Link_Text,.DropDown_Text,.DropDown_Svg{
+        display: none;
+    }
+   
+    .HamburgerMenu{
+        display: none;
+    }
+    .SideBar_Top{
+        cursor: pointer;
+    }
+    }
+    .DropDown_SideBar_Link{
+        background: var(--bg2);
+    }
+   
+    
+     
+      .KarimLogo{
+        width: 50px;
+        margin-inline: 70px;
+
+        .cls-1, .cls-2 {
+            fill:var(--primary) !important;
+          }
+      }
+      
+      
+
+   
+  
+         .SideBar_Open{
+.Etaxi{
+        width: 60px;
+        height: 30px;
+        margin-inline: 40px;
+      }
+      }
+          .noOpen{
+.Etaxi{
+        width: 90px;
+        height:30px;
+        margin-inline: 40px;
+      }
+      }
+
+@media screen and (max-width: 700px) {
+    .out_Sidebar{
+.SideBar_Open,.noOpen{
+    display: none;
+    // transform: translateX(-100px);
+}
+    }
+
+.DashboardLayout_Body_Open,.DashboardLayout .DashboardLayout_Body{
+    left: 30px !important;
+    width : calc(100% - 60px)  !important;
+}   
+.ar{
+    .DashboardLayout_Body{
+        right: 30px !important;
+        
+    }   
+    .DashboardLayout_Body_Open{
+        right: 30px !important;
+        width: calc(96% - 140px);
+        transition: 1s ease-in-out;
+    
+    
+    }
+}
+
+}
+
+
+
+
+.ant-drawer-left .ant-drawer-wrapper-body .ant-drawer-header{
+ display:none;
+}
+
+/* Ant drawer body */
+.ant-drawer-left .ant-drawer-wrapper-body .ant-drawer-body{
+ padding-left:0px;
+ padding-right:0px;
+ padding-top:0px;
+ padding-bottom:0px;
+ background: var(--bg);
+}
+
+
+.ant-drawer-left{
+    
+    .SideBar_Top{
+        display: none;
+    }
+    .ant-drawer-body div .RoutesLinks{  
+ margin-top:27px;
+}
+}
+
+
+.ant-drawer-left .ant-drawer-content{
+    
+             @include GlassModeCover;
+            // @include GlassModeBG;
+            color: var(--primary);
+            overflow-x: hidden;
+
+
+}
+
+
+
+
+
+
+.ant-drawer-right .ant-drawer-wrapper-body .ant-drawer-header{
+ display:none;
+}
+
+/* Ant drawer body */
+.ant-drawer-right .ant-drawer-wrapper-body .ant-drawer-body{
+ padding-left:0px;
+ padding-right:0px;
+ padding-top:0px;
+ padding-bottom:0px;
+ background: var(--bg);
+}
+
+
+.ant-drawer-right{
+    
+    .SideBar_Top{
+        display: none;
+    }
+    .ant-drawer-body div .RoutesLinks{  
+ margin-top:27px;
+}
+}
+
+
+.ant-drawer-right .ant-drawer-content{
+    
+             @include GlassModeCover;
+            // @include GlassModeBG;
+            color: var(--primary);
+            overflow-x: hidden;
+
+
+}

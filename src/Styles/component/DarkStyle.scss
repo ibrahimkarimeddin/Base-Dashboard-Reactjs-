@@ -1,0 +1,121 @@
+
+.dark{
+    .modal_info{
+    color: #fff !important;
+}
+.modal-title{
+    color: #fff !important;
+}
+
+// 
+.sc-hKwDye{
+    span{
+        color: var(--text) !important;
+    }
+}
+// pagination 
+        .ant-pagination-item-container .ant-pagination-item-ellipsis{
+            color: #fff !important;
+        }
+        .ant-pagination{
+            color: #fff; 
+        }
+        .anticon{
+            color: #fff;
+        }
+        .ant-pagination-item-active{
+            background: #ffffffd6;
+            border: 1px solid var(--primary);
+            a{
+                color: black !important;
+            } 
+        } 
+// Add Account Page
+        .add_account_title{
+            color: #fff;
+        }
+// INformation pages
+        .Information_title{
+            color: #fff;
+        }
+//karim field image
+        .ant-upload-list .ant-upload-list-item .ant-upload-list-item-name{
+            color: #fff !important;
+        }
+        .anticon svg{
+            color: #fff !important;
+        }
+//LyTable Arrow
+    .gPLhoV{
+        svg{
+            display: none;
+        }
+    }
+// single order 
+    .Single_order_title, .Single_order_body{
+        color: #fff !important;
+    }
+// change password
+    .change_password_body{
+        color: #fff !important; 
+    }
+    .dark_mode_white_color{
+        color: #fff !important;
+    }
+}
+
+
+
+
+
+
+
+
+//galss 
+.glass{
+    //LyTable Arrow
+    .gPLhoV{
+        svg{
+            display: none;
+        }
+    }
+    // add account
+    .add_account_title{
+        color: #fff;
+    }
+    //information 
+    .Information_title{
+        color: #fff;
+    }
+    //paginate
+    .ant-pagination{
+        color: #fff; 
+    }
+    .anticon{
+        color: #fff;
+    }
+    .ant-pagination-item-active{
+        background: #ffffffd6;
+        border: 1px solid var(--primary);
+        a{
+            color: black !important;
+        } 
+    }
+    //error page
+    .error_show{
+        margin-top: 3vw !important;
+    }
+//chart   
+    .apexcharts-canvas {
+        // color: #edf4f4 !important;
+        background: #ffffff;
+    }
+// single order 
+    .Single_order_title, .Single_order_body{
+        color: #fff !important;
+    }
+// change password
+    .change_password_body,.change_password_header{
+        color: #fff !important; 
+    }
+}

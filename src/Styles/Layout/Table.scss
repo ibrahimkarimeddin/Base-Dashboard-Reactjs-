@@ -1,0 +1,49 @@
+  .sc-hKwDye,.card-body div nav{
+        background-color:var(--bg) !important;
+        color: var(--text) !important;
+       }
+       .glass{
+       /* Hmcd */
+       .sc-dkPtRN .sc-hKwDye .sc-crHmcD{
+        background-color:transparent;
+       }
+       
+       /* Ptrn */
+       .sc-bdvvtL .sc-gsDKAQ .sc-dkPtRN{
+        background-color:transparent;
+       }
+       
+       /* Card */
+       #root .card{
+        transform:translatex(0px) translatey(0px);
+       }
+       
+       /* Bdvvtl */
+       .sc-dlVxhl .sc-fKVqWL .sc-bdvvtL{
+        background-color:transparent;
+       }
+      
+       
+       /* Row 12 */
+       .rdt_TableRow{
+        background-color:transparent !important;
+       }
+        //// table 
+       .sc-fKVqWL .sc-bdvvtL .sc-iwjdpV{
+ background-color:transparent;
+ color:var(--text);
+}
+
+
+       }
+
+
+       :where(.css-dev-only-do-not-override-1adbn6x).ant-pagination .ant-pagination-total-text,
+       a:not([href]):not([class]), a:not([href]):not([class]):hover,
+       .dLwgoF svg
+       {
+        color: var(--text);
+       }
+       :where(.css-dev-only-do-not-override-1adbn6x).ant-pagination .ant-pagination-item-active a{
+        color: var(--primary) !important;
+       }

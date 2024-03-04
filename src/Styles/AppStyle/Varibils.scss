@@ -1,0 +1,36 @@
+:root {
+    --primary:#0073ff ;
+    --secondary : #000;
+    --text: #565656;
+    --bg: #ffffff;
+    --bg2:  #f8f8f8;
+    --shadow: rgba(0, 0, 0, 0.15);
+    --gray : rgb(207, 210, 214);
+    --linear : linear-gradient(108deg, #0073ff, #1165e3)
+}
+
+:root:has(.dark) {
+    --primary: #0073ff ;     
+    --secondary: #fff;   
+    --text: #ffffff;        
+    --bg: #1f1f1f;          
+    --bg2: #2c2c2c;         
+    --shadow: rgba(255, 255, 255, 0.15); 
+    --gray: #a0aec0;  
+    --linear : linear-gradient(118deg, #0073ff, #1165e3)
+
+
+}
+
+:root:has(.glass) {
+    --primary:white;
+    --secondary : #ffd12e;
+    --text: white;
+    --bg:  ;
+    --bg2:  ;
+    --shadow: rgba(0, 0, 0, 0.15);
+    --gray : rgb(207, 210, 214);
+    --linear : 
+
+    } 
+   

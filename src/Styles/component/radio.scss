@@ -1,0 +1,79 @@
+.ant-radio-button-wrapper{
+    span{
+        position: absolute !important;
+        top: -6px;
+        left: 6px;
+        font-size: 8.5px !important;
+        color: #000 !important;
+    }
+}
+
+
+
+.ant-radio-button-wrapper {
+    // margin-left: 10px;
+    width: 50px  !important;
+    height: 20px !important;
+}
+
+
+:where(.css-dev-only-do-not-override-6j9yrn).ant-radio-button-wrapper:first-child{
+    border-radius: 5px 0px 0px 0px !important;
+    margin-left: 10px;
+}
+
+:where(.css-dev-only-do-not-override-6j9yrn).ant-radio-button-wrapper:nth-child(2){
+    border-radius: 0px 5px 0px 0px !important;
+}
+
+:where(.css-dev-only-do-not-override-6j9yrn).ant-radio-button-wrapper:last-child{
+    border-radius: 0px 0px 5px 5px !important;
+    width: 100px !important;
+    border: 1px solid #d9d9d9;
+    margin-left: 10px;
+    span{
+        font-size: 10.5px !important;
+        left: 30px !important;
+    }
+}
+
+:where(.css-dev-only-do-not-override-6j9yrn).ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):first-child{
+    background: #04ff00 !important;
+    border: 1px solid #000;
+    span{
+        color: #fff !important;
+    }
+}
+
+:where(.css-dev-only-do-not-override-6j9yrn).ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):nth-child(2){
+    background: #bcbcbc !important;
+    border: 1px solid #000;
+    span{
+        color: #fff !important;
+    }
+}
+
+:where(.css-dev-only-do-not-override-6j9yrn).ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):last-child{
+    background: #e20000 !important;
+    border: 1px solid #000 ;
+    span{
+        color: #fff !important;
+    }
+}
+
+
+:where(.css-dev-only-do-not-override-6j9yrn).ant-radio-button-wrapper:not(:first-child)::before {
+    display: none !important;
+}
+
+
+
+.ar{
+    :where(.css-dev-only-do-not-override-6j9yrn).ant-radio-button-wrapper:first-child{
+        border-radius: 0px 5px 0px 0px !important;
+        margin-left: 0px;
+    }
+    :where(.css-dev-only-do-not-override-6j9yrn).ant-radio-button-wrapper:nth-child(2){
+        border-radius: 5px 0px 0px 0px !important;
+    }
+}

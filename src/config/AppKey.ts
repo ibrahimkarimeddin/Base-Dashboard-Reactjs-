@@ -1,0 +1,9 @@
+
+
+
+const PROJECT_NAME = "PROJECT_NAME_DASHBOARD"
+
+export const TOKEN_KEY = PROJECT_NAME +  "_TOKEN"
+export const TOKEN_KEY_SOCKET = PROJECT_NAME +  "_SOKCET_TOKEN"
+
+export const USER_KEY =  PROJECT_NAME + "_USER"

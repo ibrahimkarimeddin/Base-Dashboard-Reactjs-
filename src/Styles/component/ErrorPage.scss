@@ -1,0 +1,23 @@
+.error_show{
+    display: flex;justify-content: center;align-items: center; flex-direction: column;
+    // background: #000;
+    height: 30vh;
+  
+    margin-top: 20vh;
+    .error_icon{
+        text-align: center;
+        color: red;
+        font-size: 7vw;
+    }
+    .error_text{
+        text-align: center;
+        color: red;
+        font-size: 4vw;
+    }
+}
+
+.socket_debug_error{
+    font-size: 30px ;
+    font-weight: 600;
+    color: var(--secondary);
+}

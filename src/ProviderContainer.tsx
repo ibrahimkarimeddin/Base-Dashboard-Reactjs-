@@ -1,0 +1,24 @@
+import React ,{ ReactNode } from 'react'
+import QueryProvider from './lib/ReactQueryProvider'
+import { BrowserRouter } from 'react-router-dom'
+import ToastProvider from './lib/ToastProvider'
+import { createBrowserHistory } from 'history'
+
+type ProviderContainerProps =  {
+    children:ReactNode
+
+}
+export let history = createBrowserHistory()
+function ProviderContainer({children}:ProviderContainerProps) {
+  return (
+    <BrowserRouter  basename='/'>
+     <QueryProvider>
+        <ToastProvider>
+             {children}
+        </ToastProvider>
+    </QueryProvider>
+</BrowserRouter>
+    )
+}
+
+export default ProviderContainer
