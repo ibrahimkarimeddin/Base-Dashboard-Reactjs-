@@ -26,6 +26,35 @@ pnpm install
 ```bash pnpm start ```
 6. Visit http://localhost:3333 to view the dashboard.
 
+## Useful Command
+1. Generate Api File using  
+```bash
+ npm run g:api FOLDER_NAME
+```
+2. Generate useTableColumn  File using  
+```bash
+ npm run g:column FOLDER_NAME
+```
+3. Generate  formutil File using  
+```bash
+ npm run g:formutil FOLDER_NAME
+```
+4. Generate Add Modal  File using  
+```bash
+ npm run g:modal:add FOLDER_NAME
+```
+5. Generate Api File using  
+```bash
+ npm run g:modal:edit FOLDER_NAME
+```
+6. Generate Page  File using  
+```bash
+ npm run g:page FOLDER_NAME
+```
+7. Generate All Comand And Link With Each Other    
+```bash
+ npm run g:dashboard FOLDER_NAME
+```
 ## Components
 
 ### 1. Reactstrap
